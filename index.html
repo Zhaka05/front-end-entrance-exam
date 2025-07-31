@@ -1,13 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test CV</title>
+</head>
+
+<body class="body">
+<div class="container">
+  <header class="header">
+    <a download="" href="/img/resum.pdf" class="download__btn text_small">
+      Download resume
+    </a>
+    <img class="header__img" src="/img/profileImg.png" alt="avatar" />
+    <div contenteditable="false" class="header__introduction">
+      <button
+              id="change-introduction"
+              class="text_normal change__expirience">
+        edit
+      </button>
+      <button
+              id="accept-introduction"
+              class="text_normal accept-expirience">
+        accept
+      </button>
+      <p class="introducion__text text_normal">Hello 👋🏻 I’m</p>
+      <div class="introducion__text-cotainer">
+        <h2 class="introducion__name h2">Karthik SR</h2>
+        <p class="introducion__stack text_normal_gray">UX/UI Designer</p>
+      </div>
+    </div>
+    <div class="header__languages">
+      <button id="change-languages" class="text_normal change__expirience">
+        edit
+      </button>
+      <button id="accept-languages" class="text_normal accept-expirience">
+        accept
+      </button>
+      <p class="languages__title h2">Languages</p>
+      <div class="languages__wrapper">
+        <div class="languagues__container">
+          <span class="text_normal languages__wrapper-name">English</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="languagues__container">
+          <span class="text_normal languages__wrapper-name">Malayalam</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        <div class="languagues__container">
+          <span class="text_normal languages__wrapper-name">Hindi</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__expirience">
+      <button id="change-expirience" class="text_normal change__expirience">
+        edit
+      </button>
+      <button id="accept-expirience" class="text_normal accept-expirience">
+        accept
+      </button>
+      <h2 class="main__expirience-title h2">Expiriense</h2>
+      <div class="expiriense__wrapper">
+        <div contenteditable="false" class="expiriense__wrapper-item">
+          <button contenteditable="false" class="experiense__btn">
+            most resent
+          </button>
+          <p class="expiriense__wrapper-item__text text_small">
+            Jun. 2023 - Present
+          </p>
+          <div class="expiriense__wrapper-item__work">
+            <p class="text_normal wrapper-item__work-profession">
+              Marketing Manager
+              <span class="text_small_gray">Pankayam | Full-time</span>
+            </p>
+
+            <ul class="item__work-responsibilities">
+              <li class="text_small">
+                Strategy development and planning of campaigns that promote
+                the business and generate genuine traffic
+              </li>
+              <li class="text_small">
+                SEO Content Creation for Blogs, Website, Social media
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div contenteditable="false" class="expiriense__wrapper-item">
+          <button contenteditable="false" class="experiense__btn">
+            most resent
+          </button>
+          <p class="expiriense__wrapper-item__text text_small">
+            Jun. 2023 - Present
+          </p>
+          <div class="expiriense__wrapper-item__work">
+            <p class="text_normal wrapper-item__work-profession">
+              Graphic / Web designer
+              <span class="text_small_gray">Freelance</span>
+            </p>
+
+            <ul class="item__work-responsibilities">
+              <li class="text_small">
+                Development of internal projects from scratch, product
+                design of brands
+              </li>
+              <li class="text_small">
+                Landing page, webapps and hybrid apps
+              </li>
+              <li class="text_small">
+                Coordinating with outside agencies, art services, web
+                designer, marketing, printers, and colleagues as necessary.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div contenteditable="false" class="expiriense__wrapper-item">
+          <button contenteditable="false" class="experiense__btn">
+            most resent
+          </button>
+          <p class="expiriense__wrapper-item__text text_small">
+            Jun. 2023 - Present
+          </p>
+          <div class="expiriense__wrapper-item__work">
+            <p class="text_normal wrapper-item__work-profession">
+              Marketing Manager
+              <span class="text_small_gray">Pankayam | Full-time</span>
+            </p>
+
+            <ul class="item__work-responsibilities">
+              <li class="text_small">
+                Strategy development and planning of campaigns that promote
+                the business and generate genuine traffic
+              </li>
+              <li class="text_small">
+                SEO Content Creation for Blogs, Website, Social media
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__tools">
+      <h2 class="h2 tools__title">Tools</h2>
+      <div class="tools__wrapper">
+        <div class="tools__wrapper-item">
+          <div class="tools__wrapper-title">design</div>
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoFigma.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/adobePhotoshop.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/adobeillustrator.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/AdobePremier.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoNotion.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoMeet.svg"
+                  alt="icon" />
+        </div>
+        <div class="tools__wrapper-item">
+          <div class="tools__wrapper-title">no-code</div>
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoZapìer.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoWebflow.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoFramer.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoWordpress.svg"
+                  alt="icon" />
+        </div>
+        <div class="tools__wrapper-item">
+          <div class="tools__wrapper-title">artoficial intelligence</div>
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoChatGPT.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoCopilot.svg"
+                  alt="icon" />
+          <img
+                  class="tools__wrapper-item__svg"
+                  src="/svg/logoMidjourney.svg"
+                  alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="main__education">
+      <button id="change-education" class="text_normal change__expirience">
+        edit
+      </button>
+      <button id="accept-education" class="text_normal accept-expirience">
+        accept
+      </button>
+      <h2 class="h2">Education</h2>
+      <div class="main__education-wrapper">
+        <div contenteditable="false" class="main__education-wrapper__item">
+          <p class="main__education-wrapper__item-year text_normal">2023</p>
+          <button class="favorite__education-button">
+            <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+              <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                      stroke-width="1"
+                      fill="none" />
+            </svg>
+          </button>
+          <p class="main__education-wrapper__item-school text_normal">
+            UI/UX
+            <span class="text_small text-green"
+            >#UX #UI #research #DesignSystem #Ui #wireframing #figma
+                  #Ux</span
+            >
+            <span class="text_small">Coursea</span>
+          </p>
+        </div>
+        <div contenteditable="false" class="main__education-wrapper__item">
+          <button class="favorite__education-button">
+            <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+              <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                      stroke-width="1"
+                      fill="none" />
+            </svg>
+          </button>
+          <p class="main__education-wrapper__item-year text_normal">
+            2017 - 2022
+          </p>
+          <p class="main__education-wrapper__item-school text_normal">
+            Law
+            <span class="text_small text-green"
+            >#law #legalStudies #contracts #internationalLaws
+                </span>
+            <span class="text_small">University of Kerala</span>
+          </p>
+        </div>
+        <div contenteditable="false" class="main__education-wrapper__item">
+          <button class="favorite__education-button">
+            <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+              <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                      stroke-width="1"
+                      fill="none" />
+            </svg>
+          </button>
+          <p class="main__education-wrapper__item-year text_normal">2017</p>
+          <p class="main__education-wrapper__item-school text_normal">
+            Graphic design
+            <span class="text_small text-green"
+            >#branding #web #illustration #adobe
+                </span>
+            <span class="text_small">Coursea</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main__about">
+      <div class="main__about-interests">
+        <button
+                id="change-interests"
+                class="text_normal change__expirience">
+          edit
+        </button>
+        <button id="accept-interests" class="text_normal accept-expirience">
+          accept
+        </button>
+        <h2 class="h2">Interests</h2>
+        <div class="main__about-interests__tags">
+              <span
+                      contenteditable="false"
+                      class="interests__tags-item text_normal"
+              >branding</span
+              >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >design</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >photography</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >artificial intelligence</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >illustration</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >typography</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >social networks</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >research</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >dron pilot</span
+          >
+          <span
+                  contenteditable="false"
+                  class="interests__tags-item text_normal"
+          >games</span
+          >
+        </div>
+      </div>
+      <div class="main__about-contacts">
+        <h1 class="main__about-contacts-title">
+          Let´s chat! I´m ready to work on excinting projects
+        </h1>
+        <p class="text_normal main__about-mail">
+          srkarthik.designscape@gmail.com
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
 </html>
